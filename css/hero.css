@@ -1,28 +1,31 @@
 .hero {
   background-color: #2e2f42;
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    image-set(
+      url(../images/hero-bg.mob.jpg) 1x,
+      url(../images/hero-bg@2x.mob.jpg) 2x
+    );
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  max-width: 496px;
+  max-width: 216px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -35,6 +38,8 @@
   cursor: pointer;
   letter-spacing: 0.04em;
   display: block;
+  min-width: 169px;
+  height: 56px;
   margin-left: auto;
   margin-right: auto;
   border: none;
@@ -47,4 +52,41 @@
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      image-set(
+        url(../images/hero-bg.tab.jpg) 1x,
+        url(../images/hero-bg@2x.tab.jpg) 2x
+      );
+
+    .hero-title {
+      font-size: 56px;
+      line-height: 1.07;
+      max-width: 496px;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      image-set(
+        url(../images/hero-bg.desk.jpg) 1x,
+        url(../images/hero-bg@2x.desk.jpg) 2x
+      );
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }

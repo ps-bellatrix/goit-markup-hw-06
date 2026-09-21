@@ -42,6 +42,40 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          class="mobile-menu-open-btn"
+          type="button"
+          aria-label="Open mobile menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 6C3.60001 5.68174 3.72643 5.37652 3.95148 5.15148C4.17652 4.92643 4.48175 4.8 4.80001 4.8H19.2C19.5183 4.8 19.8235 4.92643 20.0485 5.15148C20.2736 5.37652 20.4 5.68174 20.4 6C20.4 6.31826 20.2736 6.62349 20.0485 6.84853C19.8235 7.07357 19.5183 7.2 19.2 7.2H4.80001C4.48175 7.2 4.17652 7.07357 3.95148 6.84853C3.72643 6.62349 3.60001 6.31826 3.60001 6Z"
+              fill="#2E2F42"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 12C3.60001 11.6817 3.72643 11.3765 3.95148 11.1515C4.17652 10.9264 4.48175 10.8 4.80001 10.8H19.2C19.5183 10.8 19.8235 10.9264 20.0485 11.1515C20.2736 11.3765 20.4 11.6817 20.4 12C20.4 12.3183 20.2736 12.6235 20.0485 12.8485C19.8235 13.0736 19.5183 13.2 19.2 13.2H4.80001C4.48175 13.2 4.17652 13.0736 3.95148 12.8485C3.72643 12.6235 3.60001 12.3183 3.60001 12Z"
+              fill="#2E2F42"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 18C3.60001 17.6817 3.72643 17.3765 3.95148 17.1515C4.17652 16.9264 4.48175 16.8 4.80001 16.8H19.2C19.5183 16.8 19.8235 16.9264 20.0485 17.1515C20.2736 17.3765 20.4 17.6817 20.4 18C20.4 18.3183 20.2736 18.6235 20.0485 18.8485C19.8235 19.0736 19.5183 19.2 19.2 19.2H4.80001C4.48175 19.2 4.17652 19.0736 3.95148 18.8485C3.72643 18.6235 3.60001 18.3183 3.60001 18Z"
+              fill="#2E2F42"
+            />
+          </svg>
+        </button>
+
         <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -88,7 +122,7 @@
             </li>
 
             <li class="features-item">
-              <div class="features-icon-container">
+              <div class="features-icon-wrapper">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -130,7 +164,7 @@
       </section>
 
       <!--Team-->
-      <section id="team" class="section team">
+      <section id="team" class="section team hide">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
@@ -138,6 +172,7 @@
             <li class="team-item">
               <img
                 src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -185,6 +220,7 @@
             <li class="team-item">
               <img
                 src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -232,6 +268,7 @@
             <li class="team-item">
               <img
                 src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -279,6 +316,7 @@
             <li class="team-item">
               <img
                 src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -327,7 +365,7 @@
       </section>
 
       <!--Portfolio-->
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio" class="portfolio hide">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
 
@@ -336,6 +374,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio.jpg"
+                  srcset="
+                    ./images/portfolio.jpg    1x,
+                    ./images/portfolio@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                 />
@@ -355,6 +397,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio@2x-1.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -374,6 +420,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio@2x-2.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                 />
@@ -393,6 +443,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio@2x-3.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                 />
@@ -412,6 +466,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio@2x-4.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -431,6 +489,10 @@
               <div class="portfolio-cover-wrap">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio@2x-5.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                 />
@@ -450,7 +512,7 @@
       </section>
     </main>
     <!--Footer-->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer hide">
       <div class="container footer-container">
         <div class="footer-info">
           <a href="./index.html" class="logo footer-logo"
@@ -521,7 +583,7 @@
     </footer>
 
     <!--Модальне вікно-->
-    <div id="modal" class="backdrop is-open">
+    <div id="modal" class="backdrop hide">
       <div class="modal">
         <button class="modal-close-btn" type="button" aria-label="Close modal">
           <svg class="modal-close-icon" width="8" height="8">
@@ -613,6 +675,88 @@
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!--Мобільне меню-->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button
+          class="mobile-menu-close-btn"
+          type="button"
+          aria-label="Close mobile menu"
+        >
+          <svg class="mobile-menu-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link current" href="./index.html"
+                >Features</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="">Team</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-bottom">
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link accent"
+                  href="tel:+11 (000) 111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-socials">
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

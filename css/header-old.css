@@ -6,37 +6,21 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  padding: 17.5px 0;
-  display: block;
-  text-decoration: none;
+  color: #2e2f42;
+  margin-right: 76px;
 }
 
-.navigation-list,
-.contacts {
-  display: none;
-}
-
-.menu-open-btn {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  line-height: 0;
-}
-
-.menu-open-icon {
-  stroke: #2e2f42;
+.navigation-list {
+  display: flex;
+  gap: 40px;
 }
 
 .navigation-link {
