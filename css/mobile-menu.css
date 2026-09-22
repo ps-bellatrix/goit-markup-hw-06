@@ -100,7 +100,7 @@
 .mobile-menu-bottom {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
 }
 
 .mobile-menu-contacts-list {
@@ -161,7 +161,7 @@
   background-color: #404bbf;
 }
 
-.mobiles-menu-socials-icon {
+.mobile-menu-socials-icon {
   fill: #f4f4fd;
 }
 
