@@ -30,6 +30,8 @@ body {
   color: #434455;
   background-color: #ffffff;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 button {
@@ -40,7 +42,6 @@ button {
 
 a {
   text-decoration: none;
-  color: currentColor;
 }
 
 .sr-only {
@@ -56,19 +57,99 @@ a {
   margin: -1px;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+  display: inline-block;
+}
+
+.logo-accent {
+  color: #4d5ae5;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.address {
+  font-style: normal;
+}
+
 .container {
+  width: 100%;
   max-width: 320px;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
 .section {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.main-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .card-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
   }
 }
 
@@ -79,6 +160,7 @@ a {
   }
 
   .section {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
