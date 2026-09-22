@@ -175,7 +175,11 @@
     width: 530px;
   }
 
-  .footer-info,
+  .footer-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .footer-socials,
   .footer-subscribe-wrapper {
     text-align: left;
@@ -208,6 +212,7 @@
   }
 
   .footer-info {
+    margin-left: 0;
     margin-right: 120px;
   }
 
